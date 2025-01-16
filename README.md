@@ -11,4 +11,4 @@ Responsive for all devices, build using HTML and CSS</p>
 <br>
 <hr>
 <h2>Demo Screeshots
-<img src="./images/demohome.png">
+<img src="./images/fulldemo.jpeg">
