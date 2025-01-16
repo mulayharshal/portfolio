@@ -1,0 +1,682 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+ /* header start ------------------------------------------------------------------------- */
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141414;
+    position: fixed;
+    z-index: 1;
+}
+.navList{
+    list-style-type: none;
+    display: inline;
+    margin-right: 10%;
+    word-spacing: 20px;
+}
+.navList li{
+    display: inline;
+    margin: 5px;
+   
+}
+.navbarLink{
+     text-decoration: none;
+     color: white;
+     font-size:large;
+     word-spacing: 1px;
+     letter-spacing: 2px;
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    align-items: center;
+}
+.logoimg{
+    height: 80px;
+
+}
+.logoNmae{
+    font-size: xx-large;
+    color: white;
+    margin-left: 20px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    font-family: "Bree Serif", serif;
+    
+}
+
+.navList li{
+    opacity: 0.5;
+}
+.navList li:hover{
+    opacity: 1;
+}
+/* ----------------------------------------- */
+.menulogo{
+    display: none;
+    z-index: 3; 
+    height: 40px; 
+}
+.menu{
+    position: fixed;
+    z-index: 4;
+    padding-top: 20px;
+    padding-left: 8px;
+}
+.menupage{
+    display: none;
+    height: 100%;
+    width: 50%;
+    background-color: #141414;
+    color: white;
+    position: fixed;
+    /* padding-top: 90px; */
+    
+    left: -500px;    
+    z-index: 2;
+    /* border: 1px solid white; */
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0 0 8px white;
+}
+.crossdiv{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 0px 8px white;
+    border-radius: 0px 25px 3px 0px;
+}
+
+.cross{
+    position: absolute;
+    right: 0;
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 35px;
+}
+.manuList{
+    
+    display: block;
+    padding-top: 10px;
+}
+.manuList li{
+    padding-top: 15px;
+    font-size: xx-large;
+       
+}
+
+#check{
+    display: none;
+}
+
+/* if checkbox checked change manupage height */
+#check:checked ~ .menupage{
+    left: -1px;
+}
+.socialmedia1{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding-left: 23px;
+    margin-bottom: 15%;
+    width: 80%;
+    justify-content: space-between;
+}
+.socialimg1{
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+}
+@media (max-width:700px){
+    .header{
+        padding: 0;
+    }
+    .navList{
+        display: none;
+    }
+    .logo{
+        margin: 0;
+        margin-right: 10px;
+        padding-left: 30px;
+    }
+    .logoimg{
+        height: 50px;
+        margin: 0;
+        padding: 0%;
+    }
+    .header{
+        justify-content:space-evenly;
+    }
+    .logoNmae{
+        font-size: x-large;
+        word-spacing: normal;   
+    }
+    .menulogo{
+        display: inline;
+        filter: invert(1);
+    }
+    .menupage{
+        display: block;
+        
+    }
+
+}
+
+/* header end ----------------------------------------------------------------------------------------*/
+
+/* Home  start --------------------------------------------------------------------------------------------*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    word-spacing: 20px;
+    letter-spacing: 3px;
+}
+.intro1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.smallIntro{
+    display: flexbox;
+    color: white;
+    margin-top: 16%; 
+    width: fit-content;
+}
+.introName{
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hello{
+    color: orange;
+}
+.developer{
+    color: lightskyblue;
+}
+.introbtn{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    border-radius: 1rem;
+    margin-top: 10px;
+    
+}
+.introbtn:hover{
+    border-color: orange;
+    color: orange;
+    box-shadow: 0 0 20px white;
+    
+}
+.socialimg{
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.github:hover{
+    filter: invert(1);
+    color: black;
+}
+
+.linkedin{
+    filter: invert(1);
+    
+}
+.linkedin:hover{
+    filter:  none;
+    background-color: #0077B5;
+}
+.facebook{
+    filter: invert(1);
+}
+.facebook:hover{
+    filter: none;
+    background-color: #1877F2;
+}
+.instagram{
+    filter: invert(1);
+    
+}
+.instagram:hover{
+    filter: none;
+    background: linear-gradient(45deg, #833AB4, #C13584, #E1306C, #FD1D1D, #FCAF45, #405DE6);
+    color: white;
+}
+.harshalImg{
+    /* background-image: url('images/myimage.jpg'); */
+    background-image: url('images/mulay.png');
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 9%;
+     
+    box-shadow: 0 0px 10px orange; 
+
+    /* animation: slideInRight 1.5s ease-out; */
+     
+}
+
+/* .harshalImg:hover{
+    box-shadow: 0 0px 50px orange; 
+} */
+
+/* midea property for responsive home */
+
+@media (max-width:700px) {
+    .home{
+        height:fit-content;
+        width: 100%;
+    }
+    .intro1{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .harshalImg{
+        margin-top: 85px;
+        width: 300px;
+        height: 300px;
+    }
+    .smallIntro{
+        margin-left: 20px;
+    }
+}
+
+/* home end --------------------------------------------------------------------------------------------*/
+
+
+/* About me  start ----------------------------------------------------------------------------------------*/
+
+.aboutme{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+}
+.myimage{
+    display: flex;
+    height: 80%;
+    margin-left: 15%;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 7px 7px 9px rgb(107, 104, 104);
+    margin-top: 3%;
+
+    /* animation: slideInLeft 1.5s ease-out; */
+}
+
+
+
+.myself{
+    margin-left: 7%;
+    margin-right: 15%;
+    color: white;
+    line-height: 40px;
+    margin-top: 2.5%;
+    background-color: #141414;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px;
+}
+.aboutp{
+    line-height: 30px;
+    color: lightskyblue;
+}
+.allme{
+    line-height: 25px;
+    display: flex; 
+}
+
+.details{
+    margin-left: 25px;
+    
+}
+.info{
+    color: orange;
+}
+
+/* media responsive about */
+
+@media (max-width:700px){
+    .aboutme{
+        height:fit-content;
+        margin-top: 100px;
+    }
+    .myimage{
+        display: none;
+    }
+    .myself{
+        margin: 0;
+        
+    }
+    .allme h3{
+        font-size: 15px;
+    }
+    .details h3{
+        line-height: 34px;
+    }
+}
+
+/* about end ------------------------------------------------------------------------------------------------- */
+
+/* Skills start -------------------------------------------------------------------------------------------------  */
+
+.skills{
+    display: flex;
+    /* height: 100vh; */
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.myskill{
+    margin-top: 8%;
+    color: orange;
+    font-family:  'Gill Sans MT';
+}
+
+.skillContainer{
+    background-color: #141414;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    width: 70%;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    
+}
+.skill{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    /* margin-top: 20px; */
+    height:150px;
+    background-color: black;
+    border-radius: 15%;
+    box-shadow: 0px 0px 9px white;
+    margin: 10px;
+    
+}
+.skill:hover{
+    box-shadow: 0px 0px 15px orange;
+    width: 170px;
+    height:170px;
+    margin: 0px;   
+}
+.skill:hover > .skillimg{
+    width: 4.5em;
+}
+.skill:hover> .skillname{
+    font-size: 0.9em;
+}
+.skillimg{
+    border-radius: 50%;
+    width: 4em;
+    margin-top: 1.1em;
+}
+.skillname{
+    letter-spacing: 0.2em;
+    font-size: 0.7em;
+}
+/* media responsive skill */
+@media(max-width:700px){
+    .skills{
+        height:fit-content;
+        margin-top: 30px;
+    }
+    .skill{
+        width: 110px;
+        height: 110px;
+        /* margin: 0;
+        padding: 0; */
+    }
+    .skillContainer{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 90%;
+        justify-content: space-between;
+    }
+}
+
+
+/* skills end ------------------------------------------------------------------------------------------------- */
+
+/* Eductaion start ----------------------------------------------------------------------------------------------------------------------- */
+
+.education{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+
+}
+.myeduction, .edname{
+    color: orange;
+}
+.edlogo{
+    filter:  saturate(100%) invert(50%) sepia(50%) saturate(500%) hue-rotate(180deg) brightness(105%);
+    height: 60%;
+}
+
+.edinfo h4{
+    color: lightskyblue;
+}
+.educontainer{
+ margin-top: 10px;
+}
+.edubox{
+    display: flex;
+    background-color: #141414;
+    border-radius: 20px;
+    margin: 2em;
+    margin-top: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.edimg{
+    height: 10em;
+    width: 20em;
+    display: inline;
+    border-radius: 20px 0px 0px 20px ;
+}
+.edubox:hover{
+    box-shadow: 0px 0px 15px white;
+}
+.edinfo{
+    margin-left: 10px;
+    padding-right: 10px;
+    
+}
+@media(max-width:700px){
+    .education{
+        height:fit-content;
+    }
+    .edubox{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+/* media for responsive education */
+
+@media (max-width:700px){
+    .edline{
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .edubox{
+        margin: 15px;
+    }
+    .edimg{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+/* education end ----------------------------------------------------------------------------------------------------- */
+
+
+/* Contact  start ------------------------------------------------------------------------------------------------------- */
+
+.contact{
+    background-color: rgb(99, 34, 34);
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 3%; */
+    
+}
+.contact1{
+    color: orange;
+    margin-top: 9%;
+    font-size: xx-large;
+    font-family:  'Gill Sans MT';
+}
+.contactcontainer{
+    display: flex;
+    color: white;
+    width: 90%;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    
+}
+.contactbox{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+}
+.contactlogodiv{
+    background-color: #141414;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 400rem;
+    box-shadow: 0 0 5px white;
+}
+.contactlogo{
+    height: 100px;
+    width: 100px;
+    filter: invert(100%);
+    
+}
+.contactname{
+    color: orange;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+.contactlink{
+    text-decoration: none;
+    color: white;
+}
+
+.contactlogodiv:hover{
+    background-color: white;
+    box-shadow: 0 0 15px white;
+}
+.contactlogodiv:hover>.contactlogo{
+    filter: invert(0%);
+}
+.contactname:hover{
+    padding: 0;
+    font-size: 26.2px;
+}
+
+/* media for reponsive contact */
+@media (max-width:700px){
+    .contactbox{
+        width: 150px;
+        font-size:x-small;
+        text-align: center;
+    }
+    .contactlogodiv{
+        height: 100px;
+        width: 100px;
+    }
+    .contactlogo{
+        height: 50px;
+        width: 50px;
+    }
+    .contact{
+        margin-top: 20px ;
+        height:fit-content;
+    }
+    .contactname{
+        font-size: 16px;
+
+    }
+}
+
+/* contact end -------------------------------------------------------------------------------------------*/
+
+/* comman Animation start */
+
+/* right slide ing */
+/* @keyframes slideInRight {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
