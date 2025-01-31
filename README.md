@@ -3,6 +3,10 @@
 # Personal Portfolio Website
 
 </div>
+<div align="center">
+
+# ➡️<a href="https://mulayharshal.github.io/portfolio">View Live</a>
+</div>
 
 <p align="center">A fully responsive personal portfolio website,
 Responsive for all devices, build using HTML and CSS</p>
