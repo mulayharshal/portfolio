@@ -376,6 +376,129 @@ body{
 
 /* about end ------------------------------------------------------------------------------------------------- */
 
+/* Project Start ------------------------------------------------------------------------------------------------- */
+.projects{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.myprojects{
+    margin-top: 8%;
+    color: orange;
+    font-family:  'Gill Sans MT';
+}
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 3%;
+    gap: 20px;
+    background-color: #141414;
+    border-radius: 50px;
+    padding: 20px;
+}
+.project{
+    height: 380px;
+    width: 500px;
+    box-shadow: 0px 0px 9px white;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.project:hover{
+    box-shadow: 0px 0px 15px orange;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.projectimg{
+    width: 100%;
+    height: 55%;
+    border-radius: 20px 20px 0px 0px;
+     
+}
+.projectdata{
+    height: 25%;
+}
+.projectname{
+    color: orange;
+    text-align: center;
+    font-size:x-large;
+    margin: 10px;
+}
+.projectinfo{
+    color: lightskyblue;
+    text-align: center;
+    margin: 10px;
+    word-wrap: break-word;
+}
+.projectbtns{
+    display: flex;
+    width: 90%;
+    height: 4rem;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.pbtn{
+    border: 2px solid white;
+    background-color: #141414;
+    color: white;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+.pbtn:hover{
+    border-color: orange;
+    color: orange;
+    box-shadow: 0 0 20px white;
+}
+@media (max-width:700px){
+    .projects{
+        height:fit-content;
+        margin-top: 30px;
+    }
+    .projectContainer{
+        width: 96%;
+        justify-content: center;
+        padding: 0;
+    }
+    .project{
+        width: 90%;
+        height: 350px;
+        box-shadow: 0px 0px 6px white;
+    }
+    .projectimg{
+        height: 50%;
+    }
+    .projectdata{
+        height: 30%;
+        font-size: small;
+    }
+    /* .projectbtns{
+       
+    } */
+    .pbtn{
+        width: 8rem;
+    }
+}
+/* Project end ------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
 /* Skills start -------------------------------------------------------------------------------------------------  */
 
 .skills{
@@ -430,12 +553,15 @@ body{
     width: 170px;
     height:170px;
     margin: 0px;   
+      transition: all 0.3s ease-in-out;
 }
 .skill:hover > .skillimg{
     width: 4.5em;
+      transition: all 0.3s ease-in-out;
 }
 .skill:hover> .skillname{
     font-size: 0.9em;
+      transition: all 0.3s ease-in-out;
 }
 .skillimg{
     border-radius: 50%;
@@ -738,26 +864,3 @@ body{
 
 /* comman Animation start */
 
-/* right slide ing */
-/* @keyframes slideInRight {
-    from{
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-@keyframes slideInLeft {
-    from{
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-} */
